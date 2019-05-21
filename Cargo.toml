@@ -1,0 +1,25 @@
+[package]
+name = "scmrights-thingy"
+version = "0.1.0"
+authors = ["sqwishy <somebody@froghat.ca>"]
+edition = "2018"
+license = "WTFPL"
+
+[dependencies]
+clap = "2"
+
+libc = "0.2"
+
+nix = "0.13"
+
+memchr = "2"
+
+mio = "0.6"
+mio-uds = "0.6"
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+slog = { version = "2", features = ["max_level_trace", "release_max_level_debug"] }
+slog-term = "2"
+slog-journald = "2"
